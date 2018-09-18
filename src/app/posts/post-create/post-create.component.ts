@@ -7,7 +7,10 @@ import {
     templateUrl: './post-create.component.html'
 })
 export class PostCreateComponent {
+    newPost = "no content";
+    enteredValue="";
+
     onAddPost(){
-        alert("Post addded");
+        this.newPost = this.enteredValue
     }
 }
