@@ -11,9 +11,9 @@ import {
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  storedPosts: Post[];
+  /*storedPosts: Post[] = [];
 
   onPostAdded(post) {
     this.storedPosts.push(post);
-  }
+  }*/
 }

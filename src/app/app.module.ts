@@ -7,6 +7,9 @@ import {
 import {
   FormsModule
 } from '@angular/forms';
+import {
+  HttpClientModule
+} from '@angular/common/http';
 
 import {
   AppComponent
@@ -23,12 +26,14 @@ import {
   MatCardModule,
   MatButtonModule,
   MatToolbarModule,
-  MatExpansionModule
+  MatExpansionModule,
 } from '@angular/material';
 import {
   HeaderComponent
 } from './header/header/header.component';
-import { PostListComponent } from './posts/post-list/post-list.component';
+import {
+  PostListComponent
+} from './posts/post-list/post-list.component';
 
 @NgModule({
   declarations: [
@@ -45,7 +50,8 @@ import { PostListComponent } from './posts/post-list/post-list.component';
     MatCardModule,
     MatButtonModule,
     MatToolbarModule,
-    MatExpansionModule
+    MatExpansionModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
