@@ -10,7 +10,6 @@ import {
 import {
   HttpClientModule
 } from '@angular/common/http';
-
 import {
   AppComponent
 } from './app.component';
@@ -20,13 +19,13 @@ import {
 import {
   BrowserAnimationsModule
 } from '@angular/platform-browser/animations';
-
 import {
   MatInputModule,
   MatCardModule,
   MatButtonModule,
   MatToolbarModule,
   MatExpansionModule,
+  MatProgressSpinnerModule,
 } from '@angular/material';
 import {
   HeaderComponent
@@ -34,6 +33,7 @@ import {
 import {
   PostListComponent
 } from './posts/post-list/post-list.component';
+import { AppRoutingModule } from './app-routing.module';
 
 @NgModule({
   declarations: [
@@ -44,6 +44,7 @@ import {
   ],
   imports: [
     BrowserModule,
+    AppRoutingModule,
     FormsModule,
     BrowserAnimationsModule,
     MatInputModule,
@@ -51,7 +52,8 @@ import {
     MatButtonModule,
     MatToolbarModule,
     MatExpansionModule,
-    HttpClientModule
+    HttpClientModule,
+    MatProgressSpinnerModule
   ],
   providers: [],
   bootstrap: [AppComponent]
